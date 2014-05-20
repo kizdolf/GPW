@@ -1,0 +1,5 @@
+<h1> Member's list</h1>
+<% @members.each do |m| %>
+<a href="/members/<%= m.id %>"><%= m.login %></a><br />
+<% end %>
+<br /><a href="/">Home</a>

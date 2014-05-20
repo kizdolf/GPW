@@ -1,0 +1,1000 @@
+  [1m[36m (1.5ms)[0m  [1mCREATE TABLE "schema_migrations" ("version" varchar(255) NOT NULL) [0m
+  [1m[35m (0.0ms)[0m  select sqlite_version(*)
+  [1m[36m (1.2ms)[0m  [1mCREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.1ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+Migrating to CreateMembers (20140520131715)
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.2ms)[0m  CREATE TABLE "members" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar(255), "login" varchar(255), "password" varchar(255), "created_at" datetime, "updated_at" datetime) 
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20140520131715"]]
+  [1m[35m (1.5ms)[0m  commit transaction
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+
+
+Started GET "/" for 127.0.0.1 at 2014-05-20 15:24:42 +0200
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 769ms (Views: 761.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2014-05-20 15:24:43 +0200
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-05-20 15:24:43 +0200
+
+
+Started GET "/assets/members.css?body=1" for 127.0.0.1 at 2014-05-20 15:24:43 +0200
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-05-20 15:24:43 +0200
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-05-20 15:24:43 +0200
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-05-20 15:24:43 +0200
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-05-20 15:24:43 +0200
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2014-05-20 15:24:43 +0200
+
+
+Started GET "/assets/members.js?body=1" for 127.0.0.1 at 2014-05-20 15:24:43 +0200
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-05-20 15:24:43 +0200
+
+
+Started GET "/members" for 127.0.0.1 at 2014-05-20 15:24:46 +0200
+Processing by MembersController#index as HTML
+  [1m[35mMember Load (0.1ms)[0m  SELECT "members".* FROM "members"
+  Rendered members/index.html.erb within layouts/application (1.3ms)
+Completed 200 OK in 7ms (Views: 5.3ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-05-20 16:18:04 +0200
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (1.9ms)
+Completed 200 OK in 99ms (Views: 91.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-05-20 16:18:05 +0200
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-05-20 16:18:05 +0200
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2014-05-20 16:18:05 +0200
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-05-20 16:18:05 +0200
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2014-05-20 16:18:05 +0200
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-05-20 16:18:05 +0200
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-05-20 16:18:05 +0200
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-05-20 16:18:05 +0200
+  [1m[36m (1.2ms)[0m  [1mCREATE TABLE "schema_migrations" ("version" varchar(255) NOT NULL) [0m
+  [1m[35m (0.0ms)[0m  select sqlite_version(*)
+  [1m[36m (1.3ms)[0m  [1mCREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.1ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+Migrating to CreateMembers (20140520151958)
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.3ms)[0m  CREATE TABLE "members" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "login" varchar(255), "password" varchar(255), "created_at" datetime, "updated_at" datetime) 
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20140520151958"]]
+  [1m[35m (1.5ms)[0m  commit transaction
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+
+
+Started GET "/" for 127.0.0.1 at 2014-05-20 17:26:34 +0200
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (1.9ms)
+Completed 200 OK in 57ms (Views: 48.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/members.css?body=1" for 127.0.0.1 at 2014-05-20 17:26:35 +0200
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2014-05-20 17:26:35 +0200
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-05-20 17:26:35 +0200
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-05-20 17:26:35 +0200
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-05-20 17:26:35 +0200
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-05-20 17:26:35 +0200
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-05-20 17:26:35 +0200
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2014-05-20 17:26:35 +0200
+
+
+Started GET "/assets/members.js?body=1" for 127.0.0.1 at 2014-05-20 17:26:35 +0200
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-05-20 17:26:35 +0200
+
+
+Started GET "/members/new" for 127.0.0.1 at 2014-05-20 17:26:57 +0200
+
+AbstractController::ActionNotFound (The action 'new' could not be found for MembersController):
+  actionpack (4.1.0) lib/abstract_controller/base.rb:131:in `process'
+  actionview (4.1.0) lib/action_view/rendering.rb:30:in `process'
+  actionpack (4.1.0) lib/action_controller/metal.rb:195:in `dispatch'
+  actionpack (4.1.0) lib/action_controller/metal/rack_delegation.rb:13:in `dispatch'
+  actionpack (4.1.0) lib/action_controller/metal.rb:231:in `block in action'
+  actionpack (4.1.0) lib/action_dispatch/routing/route_set.rb:80:in `call'
+  actionpack (4.1.0) lib/action_dispatch/routing/route_set.rb:80:in `dispatch'
+  actionpack (4.1.0) lib/action_dispatch/routing/route_set.rb:48:in `call'
+  actionpack (4.1.0) lib/action_dispatch/journey/router.rb:71:in `block in call'
+  actionpack (4.1.0) lib/action_dispatch/journey/router.rb:59:in `each'
+  actionpack (4.1.0) lib/action_dispatch/journey/router.rb:59:in `call'
+  actionpack (4.1.0) lib/action_dispatch/routing/route_set.rb:676:in `call'
+  rack (1.5.2) lib/rack/etag.rb:23:in `call'
+  rack (1.5.2) lib/rack/conditionalget.rb:25:in `call'
+  rack (1.5.2) lib/rack/head.rb:11:in `call'
+  actionpack (4.1.0) lib/action_dispatch/middleware/params_parser.rb:27:in `call'
+  actionpack (4.1.0) lib/action_dispatch/middleware/flash.rb:254:in `call'
+  rack (1.5.2) lib/rack/session/abstract/id.rb:225:in `context'
+  rack (1.5.2) lib/rack/session/abstract/id.rb:220:in `call'
+  actionpack (4.1.0) lib/action_dispatch/middleware/cookies.rb:560:in `call'
+  activerecord (4.1.0) lib/active_record/query_cache.rb:36:in `call'
+  activerecord (4.1.0) lib/active_record/connection_adapters/abstract/connection_pool.rb:621:in `call'
+  activerecord (4.1.0) lib/active_record/migration.rb:380:in `call'
+  actionpack (4.1.0) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.1.0) lib/active_support/callbacks.rb:82:in `run_callbacks'
+  actionpack (4.1.0) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.1.0) lib/action_dispatch/middleware/reloader.rb:73:in `call'
+  actionpack (4.1.0) lib/action_dispatch/middleware/remote_ip.rb:76:in `call'
+  actionpack (4.1.0) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  actionpack (4.1.0) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.1.0) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.0) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.0) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.0) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.0) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.0) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.1.0) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.1.0) lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.1.0) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.1.0) lib/rails/engine.rb:514:in `call'
+  railties (4.1.0) lib/rails/application.rb:144:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /nfs/zfs-student-4/users/2013/vduquesn/.brew/Cellar/ruby/2.1.1_1/lib/ruby/2.1.0/webrick/httpserver.rb:138:in `service'
+  /nfs/zfs-student-4/users/2013/vduquesn/.brew/Cellar/ruby/2.1.1_1/lib/ruby/2.1.0/webrick/httpserver.rb:94:in `run'
+  /nfs/zfs-student-4/users/2013/vduquesn/.brew/Cellar/ruby/2.1.1_1/lib/ruby/2.1.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /nfs/zfs-student-4/users/2013/vduquesn/.brew/Cellar/ruby/2.1.1_1/lib/ruby/gems/2.1.0/gems/actionpack-4.1.0/lib/action_dispatch/middleware/templates/rescues/unknown_action.html.erb within rescues/layout (0.4ms)
+
+
+Started GET "/members/new" for 127.0.0.1 at 2014-05-20 17:26:57 +0200
+
+AbstractController::ActionNotFound (The action 'new' could not be found for MembersController):
+  actionpack (4.1.0) lib/abstract_controller/base.rb:131:in `process'
+  actionview (4.1.0) lib/action_view/rendering.rb:30:in `process'
+  actionpack (4.1.0) lib/action_controller/metal.rb:195:in `dispatch'
+  actionpack (4.1.0) lib/action_controller/metal/rack_delegation.rb:13:in `dispatch'
+  actionpack (4.1.0) lib/action_controller/metal.rb:231:in `block in action'
+  actionpack (4.1.0) lib/action_dispatch/routing/route_set.rb:80:in `call'
+  actionpack (4.1.0) lib/action_dispatch/routing/route_set.rb:80:in `dispatch'
+  actionpack (4.1.0) lib/action_dispatch/routing/route_set.rb:48:in `call'
+  actionpack (4.1.0) lib/action_dispatch/journey/router.rb:71:in `block in call'
+  actionpack (4.1.0) lib/action_dispatch/journey/router.rb:59:in `each'
+  actionpack (4.1.0) lib/action_dispatch/journey/router.rb:59:in `call'
+  actionpack (4.1.0) lib/action_dispatch/routing/route_set.rb:676:in `call'
+  rack (1.5.2) lib/rack/etag.rb:23:in `call'
+  rack (1.5.2) lib/rack/conditionalget.rb:25:in `call'
+  rack (1.5.2) lib/rack/head.rb:11:in `call'
+  actionpack (4.1.0) lib/action_dispatch/middleware/params_parser.rb:27:in `call'
+  actionpack (4.1.0) lib/action_dispatch/middleware/flash.rb:254:in `call'
+  rack (1.5.2) lib/rack/session/abstract/id.rb:225:in `context'
+  rack (1.5.2) lib/rack/session/abstract/id.rb:220:in `call'
+  actionpack (4.1.0) lib/action_dispatch/middleware/cookies.rb:560:in `call'
+  activerecord (4.1.0) lib/active_record/query_cache.rb:36:in `call'
+  activerecord (4.1.0) lib/active_record/connection_adapters/abstract/connection_pool.rb:621:in `call'
+  activerecord (4.1.0) lib/active_record/migration.rb:380:in `call'
+  actionpack (4.1.0) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.1.0) lib/active_support/callbacks.rb:82:in `run_callbacks'
+  actionpack (4.1.0) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.1.0) lib/action_dispatch/middleware/reloader.rb:73:in `call'
+  actionpack (4.1.0) lib/action_dispatch/middleware/remote_ip.rb:76:in `call'
+  actionpack (4.1.0) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  actionpack (4.1.0) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.1.0) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.0) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.0) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.0) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.0) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.0) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.1.0) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.1.0) lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.1.0) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.1.0) lib/rails/engine.rb:514:in `call'
+  railties (4.1.0) lib/rails/application.rb:144:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /nfs/zfs-student-4/users/2013/vduquesn/.brew/Cellar/ruby/2.1.1_1/lib/ruby/2.1.0/webrick/httpserver.rb:138:in `service'
+  /nfs/zfs-student-4/users/2013/vduquesn/.brew/Cellar/ruby/2.1.1_1/lib/ruby/2.1.0/webrick/httpserver.rb:94:in `run'
+  /nfs/zfs-student-4/users/2013/vduquesn/.brew/Cellar/ruby/2.1.1_1/lib/ruby/2.1.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /nfs/zfs-student-4/users/2013/vduquesn/.brew/Cellar/ruby/2.1.1_1/lib/ruby/gems/2.1.0/gems/actionpack-4.1.0/lib/action_dispatch/middleware/templates/rescues/unknown_action.html.erb within rescues/layout (0.4ms)
+
+
+Started GET "/members/new" for 127.0.0.1 at 2014-05-20 17:33:49 +0200
+Processing by MembersController#new as HTML
+Completed 500 Internal Server Error in 1ms
+
+NameError (uninitialized constant MembersController::User):
+  app/controllers/members_controller.rb:3:in `new'
+
+
+  Rendered /nfs/zfs-student-4/users/2013/vduquesn/.brew/Cellar/ruby/2.1.1_1/lib/ruby/gems/2.1.0/gems/actionpack-4.1.0/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.6ms)
+  Rendered /nfs/zfs-student-4/users/2013/vduquesn/.brew/Cellar/ruby/2.1.1_1/lib/ruby/gems/2.1.0/gems/actionpack-4.1.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.0ms)
+  Rendered /nfs/zfs-student-4/users/2013/vduquesn/.brew/Cellar/ruby/2.1.1_1/lib/ruby/gems/2.1.0/gems/actionpack-4.1.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.7ms)
+  Rendered /nfs/zfs-student-4/users/2013/vduquesn/.brew/Cellar/ruby/2.1.1_1/lib/ruby/gems/2.1.0/gems/actionpack-4.1.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (20.7ms)
+
+
+Started GET "/members/new" for 127.0.0.1 at 2014-05-20 17:34:49 +0200
+Processing by MembersController#new as HTML
+  Rendered members/new.html.erb within layouts/application (35.8ms)
+Completed 500 Internal Server Error in 39ms
+
+ActionView::Template::Error (undefined method `input_text' for #<ActionView::Helpers::FormBuilder:0x007f8c7dcac220>):
+    1: <h1>Signup</h1>
+    2: <%= form_for @member do |f| %>
+    3: <%= f.label :login %>
+    4: <%= f.input_text :login %>
+    5: <%= f.label :password %>
+    6: <%= f.input_password :password %>
+    7: <%= f.submit %> 
+  app/views/members/new.html.erb:4:in `block in _app_views_members_new_html_erb__3665958729059039815_70120691457600'
+  app/views/members/new.html.erb:2:in `_app_views_members_new_html_erb__3665958729059039815_70120691457600'
+
+
+  Rendered /nfs/zfs-student-4/users/2013/vduquesn/.brew/Cellar/ruby/2.1.1_1/lib/ruby/gems/2.1.0/gems/actionpack-4.1.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.0ms)
+  Rendered /nfs/zfs-student-4/users/2013/vduquesn/.brew/Cellar/ruby/2.1.1_1/lib/ruby/gems/2.1.0/gems/actionpack-4.1.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.7ms)
+  Rendered /nfs/zfs-student-4/users/2013/vduquesn/.brew/Cellar/ruby/2.1.1_1/lib/ruby/gems/2.1.0/gems/actionpack-4.1.0/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (11.2ms)
+
+
+Started GET "/members/new" for 127.0.0.1 at 2014-05-20 17:36:19 +0200
+Processing by MembersController#new as HTML
+  Rendered members/new.html.erb within layouts/application (5.3ms)
+Completed 200 OK in 10ms (Views: 9.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2014-05-20 17:36:19 +0200
+
+
+Started GET "/assets/members.css?body=1" for 127.0.0.1 at 2014-05-20 17:36:19 +0200
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-05-20 17:36:19 +0200
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-05-20 17:36:19 +0200
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-05-20 17:36:19 +0200
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-05-20 17:36:19 +0200
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-05-20 17:36:19 +0200
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2014-05-20 17:36:19 +0200
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-05-20 17:36:19 +0200
+
+
+Started GET "/assets/members.js?body=1" for 127.0.0.1 at 2014-05-20 17:36:19 +0200
+
+
+Started GET "/members/new" for 127.0.0.1 at 2014-05-20 17:36:35 +0200
+Processing by MembersController#new as HTML
+  Rendered members/new.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 7ms (Views: 6.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/members.css?body=1" for 127.0.0.1 at 2014-05-20 17:36:35 +0200
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2014-05-20 17:36:35 +0200
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-05-20 17:36:35 +0200
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-05-20 17:36:35 +0200
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2014-05-20 17:36:35 +0200
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-05-20 17:36:35 +0200
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-05-20 17:36:35 +0200
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-05-20 17:36:35 +0200
+
+
+Started GET "/assets/members.js?body=1" for 127.0.0.1 at 2014-05-20 17:36:35 +0200
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-05-20 17:36:35 +0200
+
+
+Started GET "/members/new" for 127.0.0.1 at 2014-05-20 17:36:42 +0200
+Processing by MembersController#new as HTML
+  Rendered members/new.html.erb within layouts/application (1.8ms)
+Completed 200 OK in 6ms (Views: 5.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2014-05-20 17:36:42 +0200
+
+
+Started GET "/assets/members.css?body=1" for 127.0.0.1 at 2014-05-20 17:36:42 +0200
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-05-20 17:36:42 +0200
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-05-20 17:36:42 +0200
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-05-20 17:36:42 +0200
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-05-20 17:36:42 +0200
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-05-20 17:36:42 +0200
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2014-05-20 17:36:42 +0200
+
+
+Started GET "/assets/members.js?body=1" for 127.0.0.1 at 2014-05-20 17:36:42 +0200
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-05-20 17:36:42 +0200
+
+
+Started GET "/members/new" for 127.0.0.1 at 2014-05-20 17:44:02 +0200
+Processing by MembersController#new as HTML
+  Rendered members/new.html.erb within layouts/application (3.5ms)
+Completed 500 Internal Server Error in 11ms
+
+ActionView::Template::Error (undefined method `[]' for nil:NilClass):
+     7:   <%= csrf_meta_tags %>
+     8: </head>
+     9: <body>
+    10: <% if (!alert[:success].nil?) %>
+    11: <%= alert[:success] %>
+    12: <% end %>
+    13: <%= yield %>
+  app/views/layouts/application.html.erb:10:in `_app_views_layouts_application_html_erb__1328976928787768938_70120692076960'
+
+
+  Rendered /nfs/zfs-student-4/users/2013/vduquesn/.brew/Cellar/ruby/2.1.1_1/lib/ruby/gems/2.1.0/gems/actionpack-4.1.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.0ms)
+  Rendered /nfs/zfs-student-4/users/2013/vduquesn/.brew/Cellar/ruby/2.1.1_1/lib/ruby/gems/2.1.0/gems/actionpack-4.1.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.7ms)
+  Rendered /nfs/zfs-student-4/users/2013/vduquesn/.brew/Cellar/ruby/2.1.1_1/lib/ruby/gems/2.1.0/gems/actionpack-4.1.0/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (10.9ms)
+
+
+Started GET "/members/new" for 127.0.0.1 at 2014-05-20 17:45:42 +0200
+Processing by MembersController#new as HTML
+  Rendered members/new.html.erb within layouts/application (3.8ms)
+Completed 200 OK in 11ms (Views: 8.9ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2014-05-20 17:45:42 +0200
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-05-20 17:45:42 +0200
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-05-20 17:45:42 +0200
+
+
+Started GET "/assets/members.css?body=1" for 127.0.0.1 at 2014-05-20 17:45:42 +0200
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-05-20 17:45:42 +0200
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-05-20 17:45:42 +0200
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-05-20 17:45:42 +0200
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2014-05-20 17:45:42 +0200
+
+
+Started GET "/assets/members.js?body=1" for 127.0.0.1 at 2014-05-20 17:45:42 +0200
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-05-20 17:45:42 +0200
+
+
+Started POST "/members" for 127.0.0.1 at 2014-05-20 17:45:50 +0200
+Processing by MembersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"2DXb7gZP4lp7wxfCF+3eWgeFOzBhiyy3MNNvMGidT4Y=", "member"=>{"login"=>"victor", "password"=>"[FILTERED]"}, "commit"=>"Create Member"}
+Completed 500 Internal Server Error in 1ms
+
+NoMethodError (undefined method `login' for {"login"=>"victor", "password"=>"pwd"}:ActionController::Parameters):
+  app/controllers/members_controller.rb:8:in `create'
+
+
+  Rendered /nfs/zfs-student-4/users/2013/vduquesn/.brew/Cellar/ruby/2.1.1_1/lib/ruby/gems/2.1.0/gems/actionpack-4.1.0/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.6ms)
+  Rendered /nfs/zfs-student-4/users/2013/vduquesn/.brew/Cellar/ruby/2.1.1_1/lib/ruby/gems/2.1.0/gems/actionpack-4.1.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.0ms)
+  Rendered /nfs/zfs-student-4/users/2013/vduquesn/.brew/Cellar/ruby/2.1.1_1/lib/ruby/gems/2.1.0/gems/actionpack-4.1.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.8ms)
+  Rendered /nfs/zfs-student-4/users/2013/vduquesn/.brew/Cellar/ruby/2.1.1_1/lib/ruby/gems/2.1.0/gems/actionpack-4.1.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (15.6ms)
+
+
+Started POST "/members" for 127.0.0.1 at 2014-05-20 17:47:56 +0200
+Processing by MembersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"2DXb7gZP4lp7wxfCF+3eWgeFOzBhiyy3MNNvMGidT4Y=", "member"=>{"login"=>"victor", "password"=>"[FILTERED]"}, "commit"=>"Create Member"}
+Completed 500 Internal Server Error in 2ms
+
+ActiveModel::ForbiddenAttributesError (ActiveModel::ForbiddenAttributesError):
+  app/controllers/members_controller.rb:7:in `create'
+
+
+  Rendered /nfs/zfs-student-4/users/2013/vduquesn/.brew/Cellar/ruby/2.1.1_1/lib/ruby/gems/2.1.0/gems/actionpack-4.1.0/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.5ms)
+  Rendered /nfs/zfs-student-4/users/2013/vduquesn/.brew/Cellar/ruby/2.1.1_1/lib/ruby/gems/2.1.0/gems/actionpack-4.1.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.0ms)
+  Rendered /nfs/zfs-student-4/users/2013/vduquesn/.brew/Cellar/ruby/2.1.1_1/lib/ruby/gems/2.1.0/gems/actionpack-4.1.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.7ms)
+  Rendered /nfs/zfs-student-4/users/2013/vduquesn/.brew/Cellar/ruby/2.1.1_1/lib/ruby/gems/2.1.0/gems/actionpack-4.1.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (15.5ms)
+
+
+Started POST "/members" for 127.0.0.1 at 2014-05-20 17:49:02 +0200
+Processing by MembersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"2DXb7gZP4lp7wxfCF+3eWgeFOzBhiyy3MNNvMGidT4Y=", "member"=>{"login"=>"victor", "password"=>"[FILTERED]"}, "commit"=>"Create Member"}
+Completed 500 Internal Server Error in 2ms
+
+NoMethodError (undefined method `attr_accessible' for #<Class:0x007f8c7ac7b100>):
+  app/models/member.rb:2:in `<class:Member>'
+  app/models/member.rb:1:in `<top (required)>'
+  app/controllers/members_controller.rb:7:in `create'
+
+
+  Rendered /nfs/zfs-student-4/users/2013/vduquesn/.brew/Cellar/ruby/2.1.1_1/lib/ruby/gems/2.1.0/gems/actionpack-4.1.0/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.5ms)
+  Rendered /nfs/zfs-student-4/users/2013/vduquesn/.brew/Cellar/ruby/2.1.1_1/lib/ruby/gems/2.1.0/gems/actionpack-4.1.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.0ms)
+  Rendered /nfs/zfs-student-4/users/2013/vduquesn/.brew/Cellar/ruby/2.1.1_1/lib/ruby/gems/2.1.0/gems/actionpack-4.1.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.8ms)
+  Rendered /nfs/zfs-student-4/users/2013/vduquesn/.brew/Cellar/ruby/2.1.1_1/lib/ruby/gems/2.1.0/gems/actionpack-4.1.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (15.4ms)
+
+
+Started GET "/members" for 127.0.0.1 at 2014-05-20 17:50:34 +0200
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+
+AbstractController::ActionNotFound (The action 'index' could not be found for MembersController):
+  actionpack (4.1.0) lib/abstract_controller/base.rb:131:in `process'
+  actionview (4.1.0) lib/action_view/rendering.rb:30:in `process'
+  actionpack (4.1.0) lib/action_controller/metal.rb:195:in `dispatch'
+  actionpack (4.1.0) lib/action_controller/metal/rack_delegation.rb:13:in `dispatch'
+  actionpack (4.1.0) lib/action_controller/metal.rb:231:in `block in action'
+  actionpack (4.1.0) lib/action_dispatch/routing/route_set.rb:80:in `call'
+  actionpack (4.1.0) lib/action_dispatch/routing/route_set.rb:80:in `dispatch'
+  actionpack (4.1.0) lib/action_dispatch/routing/route_set.rb:48:in `call'
+  actionpack (4.1.0) lib/action_dispatch/journey/router.rb:71:in `block in call'
+  actionpack (4.1.0) lib/action_dispatch/journey/router.rb:59:in `each'
+  actionpack (4.1.0) lib/action_dispatch/journey/router.rb:59:in `call'
+  actionpack (4.1.0) lib/action_dispatch/routing/route_set.rb:676:in `call'
+  rack (1.5.2) lib/rack/etag.rb:23:in `call'
+  rack (1.5.2) lib/rack/conditionalget.rb:25:in `call'
+  rack (1.5.2) lib/rack/head.rb:11:in `call'
+  actionpack (4.1.0) lib/action_dispatch/middleware/params_parser.rb:27:in `call'
+  actionpack (4.1.0) lib/action_dispatch/middleware/flash.rb:254:in `call'
+  rack (1.5.2) lib/rack/session/abstract/id.rb:225:in `context'
+  rack (1.5.2) lib/rack/session/abstract/id.rb:220:in `call'
+  actionpack (4.1.0) lib/action_dispatch/middleware/cookies.rb:560:in `call'
+  activerecord (4.1.0) lib/active_record/query_cache.rb:36:in `call'
+  activerecord (4.1.0) lib/active_record/connection_adapters/abstract/connection_pool.rb:621:in `call'
+  activerecord (4.1.0) lib/active_record/migration.rb:380:in `call'
+  actionpack (4.1.0) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.1.0) lib/active_support/callbacks.rb:82:in `run_callbacks'
+  actionpack (4.1.0) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.1.0) lib/action_dispatch/middleware/reloader.rb:73:in `call'
+  actionpack (4.1.0) lib/action_dispatch/middleware/remote_ip.rb:76:in `call'
+  actionpack (4.1.0) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  actionpack (4.1.0) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.1.0) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.0) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.0) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.0) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.0) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.0) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.1.0) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.1.0) lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.1.0) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.1.0) lib/rails/engine.rb:514:in `call'
+  railties (4.1.0) lib/rails/application.rb:144:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /nfs/zfs-student-4/users/2013/vduquesn/.brew/Cellar/ruby/2.1.1_1/lib/ruby/2.1.0/webrick/httpserver.rb:138:in `service'
+  /nfs/zfs-student-4/users/2013/vduquesn/.brew/Cellar/ruby/2.1.1_1/lib/ruby/2.1.0/webrick/httpserver.rb:94:in `run'
+  /nfs/zfs-student-4/users/2013/vduquesn/.brew/Cellar/ruby/2.1.1_1/lib/ruby/2.1.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /nfs/zfs-student-4/users/2013/vduquesn/.brew/Cellar/ruby/2.1.1_1/lib/ruby/gems/2.1.0/gems/actionpack-4.1.0/lib/action_dispatch/middleware/templates/rescues/unknown_action.html.erb within rescues/layout (1.1ms)
+
+
+Started GET "/members/new" for 127.0.0.1 at 2014-05-20 17:50:39 +0200
+Processing by MembersController#new as HTML
+Completed 500 Internal Server Error in 10ms
+
+NoMethodError (undefined method `attr_accessible' for #<Class:0x007fa9f5765ec0>):
+  app/models/member.rb:2:in `<class:Member>'
+  app/models/member.rb:1:in `<top (required)>'
+  app/controllers/members_controller.rb:3:in `new'
+
+
+  Rendered /nfs/zfs-student-4/users/2013/vduquesn/.brew/Cellar/ruby/2.1.1_1/lib/ruby/gems/2.1.0/gems/actionpack-4.1.0/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.5ms)
+  Rendered /nfs/zfs-student-4/users/2013/vduquesn/.brew/Cellar/ruby/2.1.1_1/lib/ruby/gems/2.1.0/gems/actionpack-4.1.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.0ms)
+  Rendered /nfs/zfs-student-4/users/2013/vduquesn/.brew/Cellar/ruby/2.1.1_1/lib/ruby/gems/2.1.0/gems/actionpack-4.1.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.9ms)
+  Rendered /nfs/zfs-student-4/users/2013/vduquesn/.brew/Cellar/ruby/2.1.1_1/lib/ruby/gems/2.1.0/gems/actionpack-4.1.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (16.1ms)
+
+
+Started GET "/members/new" for 127.0.0.1 at 2014-05-20 17:53:48 +0200
+Processing by MembersController#new as HTML
+  Rendered members/new.html.erb within layouts/application (14.3ms)
+Completed 200 OK in 51ms (Views: 48.4ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/members.css?body=1" for 127.0.0.1 at 2014-05-20 17:53:48 +0200
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2014-05-20 17:53:48 +0200
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-05-20 17:53:48 +0200
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-05-20 17:53:48 +0200
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-05-20 17:53:48 +0200
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-05-20 17:53:48 +0200
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-05-20 17:53:48 +0200
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2014-05-20 17:53:48 +0200
+
+
+Started GET "/assets/members.js?body=1" for 127.0.0.1 at 2014-05-20 17:53:48 +0200
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-05-20 17:53:48 +0200
+
+
+Started POST "/members" for 127.0.0.1 at 2014-05-20 17:53:50 +0200
+Processing by MembersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"2DXb7gZP4lp7wxfCF+3eWgeFOzBhiyy3MNNvMGidT4Y=", "member"=>{"login"=>"admin", "password"=>"[FILTERED]"}, "commit"=>"Create Member"}
+Completed 500 Internal Server Error in 1ms
+
+ActiveModel::ForbiddenAttributesError (ActiveModel::ForbiddenAttributesError):
+  app/controllers/members_controller.rb:8:in `create'
+
+
+  Rendered /nfs/zfs-student-4/users/2013/vduquesn/.brew/Cellar/ruby/2.1.1_1/lib/ruby/gems/2.1.0/gems/actionpack-4.1.0/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.6ms)
+  Rendered /nfs/zfs-student-4/users/2013/vduquesn/.brew/Cellar/ruby/2.1.1_1/lib/ruby/gems/2.1.0/gems/actionpack-4.1.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.0ms)
+  Rendered /nfs/zfs-student-4/users/2013/vduquesn/.brew/Cellar/ruby/2.1.1_1/lib/ruby/gems/2.1.0/gems/actionpack-4.1.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.8ms)
+  Rendered /nfs/zfs-student-4/users/2013/vduquesn/.brew/Cellar/ruby/2.1.1_1/lib/ruby/gems/2.1.0/gems/actionpack-4.1.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (15.9ms)
+
+
+Started POST "/members" for 127.0.0.1 at 2014-05-20 17:56:34 +0200
+Processing by MembersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"2DXb7gZP4lp7wxfCF+3eWgeFOzBhiyy3MNNvMGidT4Y=", "member"=>{"login"=>"admin", "password"=>"[FILTERED]"}, "commit"=>"Create Member"}
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (0.8ms)[0m  [1mINSERT INTO "members" ("created_at", "login", "password", "updated_at") VALUES (?, ?, ?, ?)[0m  [["created_at", "2014-05-20 15:56:34.105306"], ["login", "admin"], ["password", "admin"], ["updated_at", "2014-05-20 15:56:34.105306"]]
+  [1m[35m (1.9ms)[0m  commit transaction
+Redirected to http://localhost:3000/
+Completed 302 Found in 17ms (ActiveRecord: 3.1ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-05-20 17:56:34 +0200
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 5ms (Views: 4.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2014-05-20 17:56:34 +0200
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-05-20 17:56:34 +0200
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-05-20 17:56:34 +0200
+
+
+Started GET "/assets/members.css?body=1" for 127.0.0.1 at 2014-05-20 17:56:34 +0200
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-05-20 17:56:34 +0200
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-05-20 17:56:34 +0200
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-05-20 17:56:34 +0200
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2014-05-20 17:56:34 +0200
+
+
+Started GET "/assets/members.js?body=1" for 127.0.0.1 at 2014-05-20 17:56:34 +0200
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-05-20 17:56:34 +0200
+
+
+Started GET "/" for 127.0.0.1 at 2014-05-20 18:02:28 +0200
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 5ms (Views: 4.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2014-05-20 18:02:28 +0200
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-05-20 18:02:28 +0200
+
+
+Started GET "/assets/members.css?body=1" for 127.0.0.1 at 2014-05-20 18:02:28 +0200
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-05-20 18:02:28 +0200
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-05-20 18:02:28 +0200
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-05-20 18:02:28 +0200
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-05-20 18:02:28 +0200
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2014-05-20 18:02:29 +0200
+
+
+Started GET "/assets/members.js?body=1" for 127.0.0.1 at 2014-05-20 18:02:29 +0200
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-05-20 18:02:29 +0200
+
+
+Started GET "/" for 127.0.0.1 at 2014-05-20 18:02:36 +0200
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 5ms (Views: 4.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2014-05-20 18:02:36 +0200
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-05-20 18:02:36 +0200
+
+
+Started GET "/assets/members.css?body=1" for 127.0.0.1 at 2014-05-20 18:02:36 +0200
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-05-20 18:02:36 +0200
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-05-20 18:02:36 +0200
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-05-20 18:02:36 +0200
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-05-20 18:02:36 +0200
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2014-05-20 18:02:36 +0200
+
+
+Started GET "/assets/members.js?body=1" for 127.0.0.1 at 2014-05-20 18:02:36 +0200
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-05-20 18:02:36 +0200
+
+
+Started GET "/members" for 127.0.0.1 at 2014-05-20 18:02:37 +0200
+Processing by MembersController#index as HTML
+  [1m[36mMember Load (0.4ms)[0m  [1mSELECT "members".* FROM "members"[0m
+  Rendered members/index.html.erb within layouts/application (3.7ms)
+Completed 200 OK in 11ms (Views: 9.3ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/members" for 127.0.0.1 at 2014-05-20 18:04:39 +0200
+Processing by MembersController#index as HTML
+  [1m[35mMember Load (0.2ms)[0m  SELECT "members".* FROM "members"
+  Rendered members/index.html.erb within layouts/application (3.4ms)
+Completed 200 OK in 9ms (Views: 7.3ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2014-05-20 18:04:39 +0200
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-05-20 18:04:39 +0200
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-05-20 18:04:39 +0200
+
+
+Started GET "/assets/members.css?body=1" for 127.0.0.1 at 2014-05-20 18:04:39 +0200
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-05-20 18:04:39 +0200
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-05-20 18:04:39 +0200
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-05-20 18:04:39 +0200
+
+
+Started GET "/assets/members.js?body=1" for 127.0.0.1 at 2014-05-20 18:04:39 +0200
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2014-05-20 18:04:39 +0200
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-05-20 18:04:39 +0200
+
+
+Started GET "/members" for 127.0.0.1 at 2014-05-20 18:06:52 +0200
+Processing by MembersController#index as HTML
+  [1m[36mMember Load (0.2ms)[0m  [1mSELECT "members".* FROM "members"[0m
+  Rendered members/index.html.erb within layouts/application (3.0ms)
+Completed 200 OK in 9ms (Views: 6.9ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2014-05-20 18:06:52 +0200
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-05-20 18:06:52 +0200
+
+
+Started GET "/assets/members.css?body=1" for 127.0.0.1 at 2014-05-20 18:06:52 +0200
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-05-20 18:06:52 +0200
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-05-20 18:06:52 +0200
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-05-20 18:06:52 +0200
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-05-20 18:06:52 +0200
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2014-05-20 18:06:52 +0200
+
+
+Started GET "/assets/members.js?body=1" for 127.0.0.1 at 2014-05-20 18:06:52 +0200
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-05-20 18:06:52 +0200
+
+
+Started GET "/members/1" for 127.0.0.1 at 2014-05-20 18:06:55 +0200
+Processing by MembersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mMember Load (0.2ms)[0m  SELECT  "members".* FROM "members"  WHERE "members"."id" = 1 LIMIT 1
+  Rendered members/show.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 18ms (Views: 5.2ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/members/1" for 127.0.0.1 at 2014-05-20 18:07:44 +0200
+Processing by MembersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mMember Load (0.1ms)[0m  [1mSELECT  "members".* FROM "members"  WHERE "members"."id" = 1 LIMIT 1[0m
+  Rendered members/show.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 6ms (Views: 4.7ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2014-05-20 18:07:44 +0200
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-05-20 18:07:44 +0200
+
+
+Started GET "/assets/members.css?body=1" for 127.0.0.1 at 2014-05-20 18:07:44 +0200
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-05-20 18:07:44 +0200
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-05-20 18:07:44 +0200
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-05-20 18:07:44 +0200
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2014-05-20 18:07:44 +0200
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-05-20 18:07:44 +0200
+
+
+Started GET "/assets/members.js?body=1" for 127.0.0.1 at 2014-05-20 18:07:44 +0200
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-05-20 18:07:44 +0200
+
+
+Started GET "/" for 127.0.0.1 at 2014-05-20 18:07:47 +0200
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 7ms (Views: 5.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/members" for 127.0.0.1 at 2014-05-20 18:07:48 +0200
+Processing by MembersController#index as HTML
+  [1m[35mMember Load (0.2ms)[0m  SELECT "members".* FROM "members"
+  Rendered members/index.html.erb within layouts/application (1.2ms)
+Completed 200 OK in 8ms (Views: 7.7ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/members/1" for 127.0.0.1 at 2014-05-20 18:07:49 +0200
+Processing by MembersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mMember Load (0.2ms)[0m  [1mSELECT  "members".* FROM "members"  WHERE "members"."id" = 1 LIMIT 1[0m
+  Rendered members/show.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 10ms (Views: 8.5ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-05-20 18:07:51 +0200
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 7ms (Views: 6.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/members" for 127.0.0.1 at 2014-05-20 18:07:53 +0200
+Processing by MembersController#index as HTML
+  [1m[35mMember Load (0.1ms)[0m  SELECT "members".* FROM "members"
+  Rendered members/index.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 9ms (Views: 8.0ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/members/1" for 127.0.0.1 at 2014-05-20 18:07:55 +0200
+Processing by MembersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mMember Load (0.1ms)[0m  [1mSELECT  "members".* FROM "members"  WHERE "members"."id" = 1 LIMIT 1[0m
+  Rendered members/show.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 7ms (Views: 6.1ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-05-20 18:07:56 +0200
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 9ms (Views: 8.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/members" for 127.0.0.1 at 2014-05-20 18:07:59 +0200
+Processing by MembersController#index as HTML
+  [1m[35mMember Load (0.1ms)[0m  SELECT "members".* FROM "members"
+  Rendered members/index.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 8ms (Views: 7.1ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-05-20 18:08:00 +0200
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 7ms (Views: 5.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-05-20 18:54:58 +0200
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 21ms (Views: 20.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2014-05-20 18:54:58 +0200
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-05-20 18:54:58 +0200
+
+
+Started GET "/assets/members.css?body=1" for 127.0.0.1 at 2014-05-20 18:54:58 +0200
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-05-20 18:54:58 +0200
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-05-20 18:54:58 +0200
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-05-20 18:54:58 +0200
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2014-05-20 18:54:58 +0200
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-05-20 18:54:58 +0200
+
+
+Started GET "/assets/members.js?body=1" for 127.0.0.1 at 2014-05-20 18:54:58 +0200
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-05-20 18:54:58 +0200
+
+
+Started GET "/members" for 127.0.0.1 at 2014-05-20 18:55:00 +0200
+Processing by MembersController#index as HTML
+  [1m[36mMember Load (0.4ms)[0m  [1mSELECT "members".* FROM "members"[0m
+  Rendered members/index.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 15ms (Views: 14.0ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/members/1" for 127.0.0.1 at 2014-05-20 18:55:00 +0200
+Processing by MembersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mMember Load (0.1ms)[0m  SELECT  "members".* FROM "members"  WHERE "members"."id" = 1 LIMIT 1
+  Rendered members/show.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 18ms (Views: 17.1ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-05-20 18:55:25 +0200
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 7ms (Views: 5.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/members/new" for 127.0.0.1 at 2014-05-20 18:55:31 +0200
+Processing by MembersController#new as HTML
+  Rendered members/new.html.erb within layouts/application (2.4ms)
+Completed 200 OK in 20ms (Views: 19.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/members" for 127.0.0.1 at 2014-05-20 18:55:33 +0200
+Processing by MembersController#index as HTML
+  [1m[36mMember Load (0.1ms)[0m  [1mSELECT "members".* FROM "members"[0m
+  Rendered members/index.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 8ms (Views: 7.8ms | ActiveRecord: 0.1ms)

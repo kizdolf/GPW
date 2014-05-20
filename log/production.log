@@ -1,0 +1,469 @@
+I, [2014-05-20T15:02:24.931130 #43942]  INFO -- : Started GET "/" for 127.0.0.1 at 2014-05-20 15:02:24 +0200
+F, [2014-05-20T15:02:24.946801 #43942] FATAL -- : 
+ActionController::RoutingError (No route matches [GET] "/"):
+  actionpack (4.1.0) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.1.0) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.1.0) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.0) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.0) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.0) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.0) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.0) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.1.0) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.1.0) lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.1.0) lib/rails/engine.rb:514:in `call'
+  railties (4.1.0) lib/rails/application.rb:144:in `call'
+  passenger (4.0.41) lib/phusion_passenger/rack/thread_handler_extension.rb:74:in `process_request'
+  passenger (4.0.41) lib/phusion_passenger/request_handler/thread_handler.rb:141:in `accept_and_process_next_request'
+  passenger (4.0.41) lib/phusion_passenger/request_handler/thread_handler.rb:109:in `main_loop'
+  passenger (4.0.41) lib/phusion_passenger/request_handler.rb:448:in `block (3 levels) in start_threads'
+
+
+I, [2014-05-20T15:04:10.801205 #43942]  INFO -- : Started GET "/" for 127.0.0.1 at 2014-05-20 15:04:10 +0200
+F, [2014-05-20T15:04:10.802387 #43942] FATAL -- : 
+ActionController::RoutingError (No route matches [GET] "/"):
+  actionpack (4.1.0) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.1.0) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.1.0) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.0) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.0) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.0) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.0) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.0) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.1.0) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.1.0) lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.1.0) lib/rails/engine.rb:514:in `call'
+  railties (4.1.0) lib/rails/application.rb:144:in `call'
+  passenger (4.0.41) lib/phusion_passenger/rack/thread_handler_extension.rb:74:in `process_request'
+  passenger (4.0.41) lib/phusion_passenger/request_handler/thread_handler.rb:141:in `accept_and_process_next_request'
+  passenger (4.0.41) lib/phusion_passenger/request_handler/thread_handler.rb:109:in `main_loop'
+  passenger (4.0.41) lib/phusion_passenger/request_handler.rb:448:in `block (3 levels) in start_threads'
+
+
+I, [2014-05-20T15:04:22.928993 #44049]  INFO -- : Started GET "/" for 127.0.0.1 at 2014-05-20 15:04:22 +0200
+F, [2014-05-20T15:04:22.934556 #44049] FATAL -- : 
+ActionController::RoutingError (No route matches [GET] "/"):
+  actionpack (4.1.0) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.1.0) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.1.0) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.0) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.0) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.0) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.0) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.0) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.1.0) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.1.0) lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.1.0) lib/rails/engine.rb:514:in `call'
+  railties (4.1.0) lib/rails/application.rb:144:in `call'
+  passenger (4.0.41) lib/phusion_passenger/rack/thread_handler_extension.rb:74:in `process_request'
+  passenger (4.0.41) lib/phusion_passenger/request_handler/thread_handler.rb:141:in `accept_and_process_next_request'
+  passenger (4.0.41) lib/phusion_passenger/request_handler/thread_handler.rb:109:in `main_loop'
+  passenger (4.0.41) lib/phusion_passenger/request_handler.rb:448:in `block (3 levels) in start_threads'
+
+
+I, [2014-05-20T15:04:24.901095 #44049]  INFO -- : Started GET "/" for 127.0.0.1 at 2014-05-20 15:04:24 +0200
+F, [2014-05-20T15:04:24.902111 #44049] FATAL -- : 
+ActionController::RoutingError (No route matches [GET] "/"):
+  actionpack (4.1.0) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.1.0) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.1.0) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.0) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.0) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.0) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.0) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.0) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.1.0) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.1.0) lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.1.0) lib/rails/engine.rb:514:in `call'
+  railties (4.1.0) lib/rails/application.rb:144:in `call'
+  passenger (4.0.41) lib/phusion_passenger/rack/thread_handler_extension.rb:74:in `process_request'
+  passenger (4.0.41) lib/phusion_passenger/request_handler/thread_handler.rb:141:in `accept_and_process_next_request'
+  passenger (4.0.41) lib/phusion_passenger/request_handler/thread_handler.rb:109:in `main_loop'
+  passenger (4.0.41) lib/phusion_passenger/request_handler.rb:448:in `block (3 levels) in start_threads'
+
+
+I, [2014-05-20T15:04:26.669379 #44049]  INFO -- : Started GET "/" for 127.0.0.1 at 2014-05-20 15:04:26 +0200
+F, [2014-05-20T15:04:26.671185 #44049] FATAL -- : 
+ActionController::RoutingError (No route matches [GET] "/"):
+  actionpack (4.1.0) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.1.0) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.1.0) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.0) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.0) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.0) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.0) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.0) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.1.0) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.1.0) lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.1.0) lib/rails/engine.rb:514:in `call'
+  railties (4.1.0) lib/rails/application.rb:144:in `call'
+  passenger (4.0.41) lib/phusion_passenger/rack/thread_handler_extension.rb:74:in `process_request'
+  passenger (4.0.41) lib/phusion_passenger/request_handler/thread_handler.rb:141:in `accept_and_process_next_request'
+  passenger (4.0.41) lib/phusion_passenger/request_handler/thread_handler.rb:109:in `main_loop'
+  passenger (4.0.41) lib/phusion_passenger/request_handler.rb:448:in `block (3 levels) in start_threads'
+
+
+I, [2014-05-20T15:04:39.924621 #44049]  INFO -- : Started GET "/" for 127.0.0.1 at 2014-05-20 15:04:39 +0200
+F, [2014-05-20T15:04:39.926198 #44049] FATAL -- : 
+ActionController::RoutingError (No route matches [GET] "/"):
+  actionpack (4.1.0) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.1.0) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.1.0) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.0) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.0) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.0) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.0) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.0) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.1.0) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.1.0) lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.1.0) lib/rails/engine.rb:514:in `call'
+  railties (4.1.0) lib/rails/application.rb:144:in `call'
+  passenger (4.0.41) lib/phusion_passenger/rack/thread_handler_extension.rb:74:in `process_request'
+  passenger (4.0.41) lib/phusion_passenger/request_handler/thread_handler.rb:141:in `accept_and_process_next_request'
+  passenger (4.0.41) lib/phusion_passenger/request_handler/thread_handler.rb:109:in `main_loop'
+  passenger (4.0.41) lib/phusion_passenger/request_handler.rb:448:in `block (3 levels) in start_threads'
+
+
+I, [2014-05-20T15:08:04.810949 #44206]  INFO -- : Started GET "/" for 127.0.0.1 at 2014-05-20 15:08:04 +0200
+I, [2014-05-20T15:08:04.819418 #44206]  INFO -- : Processing by HomeController#index as HTML
+I, [2014-05-20T15:08:04.830022 #44206]  INFO -- :   Rendered home/index.html.erb within layouts/application (0.8ms)
+I, [2014-05-20T15:08:04.831767 #44206]  INFO -- : Completed 200 OK in 12ms (Views: 5.4ms | ActiveRecord: 0.0ms)
+I, [2014-05-20T15:08:04.888794 #44206]  INFO -- : Started GET "/stylesheets/application.css" for 127.0.0.1 at 2014-05-20 15:08:04 +0200
+F, [2014-05-20T15:08:04.890820 #44206] FATAL -- : 
+ActionController::RoutingError (No route matches [GET] "/stylesheets/application.css"):
+  actionpack (4.1.0) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.1.0) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.1.0) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.0) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.0) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.0) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.0) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.0) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.1.0) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.1.0) lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.1.0) lib/rails/engine.rb:514:in `call'
+  railties (4.1.0) lib/rails/application.rb:144:in `call'
+  passenger (4.0.41) lib/phusion_passenger/rack/thread_handler_extension.rb:74:in `process_request'
+  passenger (4.0.41) lib/phusion_passenger/request_handler/thread_handler.rb:141:in `accept_and_process_next_request'
+  passenger (4.0.41) lib/phusion_passenger/request_handler/thread_handler.rb:109:in `main_loop'
+  passenger (4.0.41) lib/phusion_passenger/request_handler.rb:448:in `block (3 levels) in start_threads'
+
+
+I, [2014-05-20T15:08:04.893446 #44206]  INFO -- : Started GET "/javascripts/application.js" for 127.0.0.1 at 2014-05-20 15:08:04 +0200
+F, [2014-05-20T15:08:04.894725 #44206] FATAL -- : 
+ActionController::RoutingError (No route matches [GET] "/javascripts/application.js"):
+  actionpack (4.1.0) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.1.0) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.1.0) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.0) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.0) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.0) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.0) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.0) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.1.0) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.1.0) lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.1.0) lib/rails/engine.rb:514:in `call'
+  railties (4.1.0) lib/rails/application.rb:144:in `call'
+  passenger (4.0.41) lib/phusion_passenger/rack/thread_handler_extension.rb:74:in `process_request'
+  passenger (4.0.41) lib/phusion_passenger/request_handler/thread_handler.rb:141:in `accept_and_process_next_request'
+  passenger (4.0.41) lib/phusion_passenger/request_handler/thread_handler.rb:109:in `main_loop'
+  passenger (4.0.41) lib/phusion_passenger/request_handler.rb:448:in `block (3 levels) in start_threads'
+
+
+I, [2014-05-20T15:08:11.336705 #44206]  INFO -- : Started GET "/" for 127.0.0.1 at 2014-05-20 15:08:11 +0200
+I, [2014-05-20T15:08:11.337553 #44206]  INFO -- : Processing by HomeController#index as HTML
+I, [2014-05-20T15:08:11.338582 #44206]  INFO -- :   Rendered home/index.html.erb within layouts/application (0.0ms)
+I, [2014-05-20T15:08:11.339176 #44206]  INFO -- : Completed 200 OK in 1ms (Views: 0.9ms | ActiveRecord: 0.0ms)
+I, [2014-05-20T15:08:11.358641 #44206]  INFO -- : Started GET "/stylesheets/application.css" for 127.0.0.1 at 2014-05-20 15:08:11 +0200
+F, [2014-05-20T15:08:11.360011 #44206] FATAL -- : 
+ActionController::RoutingError (No route matches [GET] "/stylesheets/application.css"):
+  actionpack (4.1.0) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.1.0) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.1.0) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.0) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.0) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.0) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.0) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.0) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.1.0) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.1.0) lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.1.0) lib/rails/engine.rb:514:in `call'
+  railties (4.1.0) lib/rails/application.rb:144:in `call'
+  passenger (4.0.41) lib/phusion_passenger/rack/thread_handler_extension.rb:74:in `process_request'
+  passenger (4.0.41) lib/phusion_passenger/request_handler/thread_handler.rb:141:in `accept_and_process_next_request'
+  passenger (4.0.41) lib/phusion_passenger/request_handler/thread_handler.rb:109:in `main_loop'
+  passenger (4.0.41) lib/phusion_passenger/request_handler.rb:448:in `block (3 levels) in start_threads'
+
+
+I, [2014-05-20T15:08:11.366333 #44207]  INFO -- : Started GET "/javascripts/application.js" for 127.0.0.1 at 2014-05-20 15:08:11 +0200
+F, [2014-05-20T15:08:11.374721 #44207] FATAL -- : 
+ActionController::RoutingError (No route matches [GET] "/javascripts/application.js"):
+  actionpack (4.1.0) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.1.0) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.1.0) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.0) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.0) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.0) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.0) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.0) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.1.0) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.1.0) lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.1.0) lib/rails/engine.rb:514:in `call'
+  railties (4.1.0) lib/rails/application.rb:144:in `call'
+  passenger (4.0.41) lib/phusion_passenger/rack/thread_handler_extension.rb:74:in `process_request'
+  passenger (4.0.41) lib/phusion_passenger/request_handler/thread_handler.rb:141:in `accept_and_process_next_request'
+  passenger (4.0.41) lib/phusion_passenger/request_handler/thread_handler.rb:109:in `main_loop'
+  passenger (4.0.41) lib/phusion_passenger/request_handler.rb:448:in `block (3 levels) in start_threads'
+
+
+I, [2014-05-20T15:17:19.700728 #44207]  INFO -- : Started GET "/member" for 127.0.0.1 at 2014-05-20 15:17:19 +0200
+F, [2014-05-20T15:17:19.703096 #44207] FATAL -- : 
+ActionController::RoutingError (No route matches [GET] "/member"):
+  actionpack (4.1.0) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.1.0) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.1.0) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.0) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.0) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.0) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.0) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.0) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.1.0) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.1.0) lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.1.0) lib/rails/engine.rb:514:in `call'
+  railties (4.1.0) lib/rails/application.rb:144:in `call'
+  passenger (4.0.41) lib/phusion_passenger/rack/thread_handler_extension.rb:74:in `process_request'
+  passenger (4.0.41) lib/phusion_passenger/request_handler/thread_handler.rb:141:in `accept_and_process_next_request'
+  passenger (4.0.41) lib/phusion_passenger/request_handler/thread_handler.rb:109:in `main_loop'
+  passenger (4.0.41) lib/phusion_passenger/request_handler.rb:448:in `block (3 levels) in start_threads'
+
+
+I, [2014-05-20T15:17:21.419094 #44207]  INFO -- : Started GET "/members" for 127.0.0.1 at 2014-05-20 15:17:21 +0200
+F, [2014-05-20T15:17:21.420654 #44207] FATAL -- : 
+ActionController::RoutingError (No route matches [GET] "/members"):
+  actionpack (4.1.0) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.1.0) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.1.0) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.0) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.0) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.0) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.0) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.0) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.1.0) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.1.0) lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.1.0) lib/rails/engine.rb:514:in `call'
+  railties (4.1.0) lib/rails/application.rb:144:in `call'
+  passenger (4.0.41) lib/phusion_passenger/rack/thread_handler_extension.rb:74:in `process_request'
+  passenger (4.0.41) lib/phusion_passenger/request_handler/thread_handler.rb:141:in `accept_and_process_next_request'
+  passenger (4.0.41) lib/phusion_passenger/request_handler/thread_handler.rb:109:in `main_loop'
+  passenger (4.0.41) lib/phusion_passenger/request_handler.rb:448:in `block (3 levels) in start_threads'
+
+
+I, [2014-05-20T15:17:23.201837 #44207]  INFO -- : Started GET "/members" for 127.0.0.1 at 2014-05-20 15:17:23 +0200
+F, [2014-05-20T15:17:23.203004 #44207] FATAL -- : 
+ActionController::RoutingError (No route matches [GET] "/members"):
+  actionpack (4.1.0) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.1.0) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.1.0) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.0) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.0) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.0) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.0) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.0) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.1.0) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.1.0) lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.1.0) lib/rails/engine.rb:514:in `call'
+  railties (4.1.0) lib/rails/application.rb:144:in `call'
+  passenger (4.0.41) lib/phusion_passenger/rack/thread_handler_extension.rb:74:in `process_request'
+  passenger (4.0.41) lib/phusion_passenger/request_handler/thread_handler.rb:141:in `accept_and_process_next_request'
+  passenger (4.0.41) lib/phusion_passenger/request_handler/thread_handler.rb:109:in `main_loop'
+  passenger (4.0.41) lib/phusion_passenger/request_handler.rb:448:in `block (3 levels) in start_threads'
+
+
+I, [2014-05-20T15:17:33.425720 #44207]  INFO -- : Started GET "/members" for 127.0.0.1 at 2014-05-20 15:17:33 +0200
+F, [2014-05-20T15:17:33.426834 #44207] FATAL -- : 
+ActionController::RoutingError (No route matches [GET] "/members"):
+  actionpack (4.1.0) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.1.0) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.1.0) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.0) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.0) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.0) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.0) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.0) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.1.0) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.1.0) lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.1.0) lib/rails/engine.rb:514:in `call'
+  railties (4.1.0) lib/rails/application.rb:144:in `call'
+  passenger (4.0.41) lib/phusion_passenger/rack/thread_handler_extension.rb:74:in `process_request'
+  passenger (4.0.41) lib/phusion_passenger/request_handler/thread_handler.rb:141:in `accept_and_process_next_request'
+  passenger (4.0.41) lib/phusion_passenger/request_handler/thread_handler.rb:109:in `main_loop'
+  passenger (4.0.41) lib/phusion_passenger/request_handler.rb:448:in `block (3 levels) in start_threads'
+
+
+I, [2014-05-20T15:17:47.329462 #44504]  INFO -- : Started GET "/members" for 127.0.0.1 at 2014-05-20 15:17:47 +0200
+I, [2014-05-20T15:17:47.340086 #44504]  INFO -- : Processing by MembersController#index as HTML
+E, [2014-05-20T15:17:47.354156 #44504] ERROR -- : SQLite3::SQLException: no such table: members: SELECT "members".* FROM "members"
+I, [2014-05-20T15:17:47.355242 #44504]  INFO -- :   Rendered members/index.html.erb within layouts/application (4.2ms)
+I, [2014-05-20T15:17:47.355475 #44504]  INFO -- : Completed 500 Internal Server Error in 15ms
+F, [2014-05-20T15:17:47.358076 #44504] FATAL -- : 
+ActionView::Template::Error (SQLite3::SQLException: no such table: members: SELECT "members".* FROM "members"):
+    11:   </thead>
+    12: 
+    13:   <tbody>
+    14:     <% @members.each do |member| %>
+    15:       <tr>
+    16:         <td><%= member.name %></td>
+    17:         <td><%= member.login %></td>
+  app/views/members/index.html.erb:14:in `_app_views_members_index_html_erb___2781091300246123108_70354144667520'
+
+
+I, [2014-05-20T15:19:30.061989 #44592]  INFO -- : Started GET "/members" for 127.0.0.1 at 2014-05-20 15:19:30 +0200
+I, [2014-05-20T15:19:30.072030 #44592]  INFO -- : Processing by MembersController#index as HTML
+E, [2014-05-20T15:19:30.085480 #44592] ERROR -- : SQLite3::SQLException: no such table: members: SELECT "members".* FROM "members"
+I, [2014-05-20T15:19:30.086264 #44592]  INFO -- :   Rendered members/index.html.erb within layouts/application (3.5ms)
+I, [2014-05-20T15:19:30.086471 #44592]  INFO -- : Completed 500 Internal Server Error in 14ms
+F, [2014-05-20T15:19:30.088748 #44592] FATAL -- : 
+ActionView::Template::Error (SQLite3::SQLException: no such table: members: SELECT "members".* FROM "members"):
+    11:   </thead>
+    12: 
+    13:   <tbody>
+    14:     <% @members.each do |member| %>
+    15:       <tr>
+    16:         <td><%= member.name %></td>
+    17:         <td><%= member.login %></td>
+  app/views/members/index.html.erb:14:in `_app_views_members_index_html_erb___4204572997792791787_70149974405740'
+
+
+I, [2014-05-20T15:19:34.339036 #44592]  INFO -- : Started GET "/members" for 127.0.0.1 at 2014-05-20 15:19:34 +0200
+I, [2014-05-20T15:19:34.339889 #44592]  INFO -- : Processing by MembersController#index as HTML
+E, [2014-05-20T15:19:34.341458 #44592] ERROR -- : SQLite3::SQLException: no such table: members: SELECT "members".* FROM "members"
+I, [2014-05-20T15:19:34.342113 #44592]  INFO -- :   Rendered members/index.html.erb within layouts/application (1.2ms)
+I, [2014-05-20T15:19:34.342251 #44592]  INFO -- : Completed 500 Internal Server Error in 2ms
+F, [2014-05-20T15:19:34.344372 #44592] FATAL -- : 
+ActionView::Template::Error (SQLite3::SQLException: no such table: members: SELECT "members".* FROM "members"):
+    11:   </thead>
+    12: 
+    13:   <tbody>
+    14:     <% @members.each do |member| %>
+    15:       <tr>
+    16:         <td><%= member.name %></td>
+    17:         <td><%= member.login %></td>
+  app/views/members/index.html.erb:14:in `_app_views_members_index_html_erb___4204572997792791787_70149974405740'
+
+
+I, [2014-05-20T15:20:35.416473 #44592]  INFO -- : Started GET "/member" for 127.0.0.1 at 2014-05-20 15:20:35 +0200
+F, [2014-05-20T15:20:35.417703 #44592] FATAL -- : 
+ActionController::RoutingError (No route matches [GET] "/member"):
+  actionpack (4.1.0) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.1.0) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.1.0) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.0) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.0) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.0) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.0) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.0) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.1.0) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.1.0) lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.1.0) lib/rails/engine.rb:514:in `call'
+  railties (4.1.0) lib/rails/application.rb:144:in `call'
+  passenger (4.0.41) lib/phusion_passenger/rack/thread_handler_extension.rb:74:in `process_request'
+  passenger (4.0.41) lib/phusion_passenger/request_handler/thread_handler.rb:141:in `accept_and_process_next_request'
+  passenger (4.0.41) lib/phusion_passenger/request_handler/thread_handler.rb:109:in `main_loop'
+  passenger (4.0.41) lib/phusion_passenger/request_handler.rb:448:in `block (3 levels) in start_threads'
+
+
+I, [2014-05-20T15:20:38.656069 #44592]  INFO -- : Started GET "/members" for 127.0.0.1 at 2014-05-20 15:20:38 +0200
+I, [2014-05-20T15:20:38.656842 #44592]  INFO -- : Processing by MembersController#index as HTML
+E, [2014-05-20T15:20:38.658275 #44592] ERROR -- : SQLite3::SQLException: no such table: members: SELECT "members".* FROM "members"
+I, [2014-05-20T15:20:38.658920 #44592]  INFO -- :   Rendered members/index.html.erb within layouts/application (1.1ms)
+I, [2014-05-20T15:20:38.659056 #44592]  INFO -- : Completed 500 Internal Server Error in 2ms
+F, [2014-05-20T15:20:38.661151 #44592] FATAL -- : 
+ActionView::Template::Error (SQLite3::SQLException: no such table: members: SELECT "members".* FROM "members"):
+    11:   </thead>
+    12: 
+    13:   <tbody>
+    14:     <% @members.each do |member| %>
+    15:       <tr>
+    16:         <td><%= member.name %></td>
+    17:         <td><%= member.login %></td>
+  app/views/members/index.html.erb:14:in `_app_views_members_index_html_erb___4204572997792791787_70149974405740'
+
+
+I, [2014-05-20T15:21:47.957446 #44592]  INFO -- : Started GET "/members/new" for 127.0.0.1 at 2014-05-20 15:21:47 +0200
+I, [2014-05-20T15:21:47.958719 #44592]  INFO -- : Processing by MembersController#new as HTML
+I, [2014-05-20T15:21:47.959779 #44592]  INFO -- : Completed 500 Internal Server Error in 1ms
+F, [2014-05-20T15:21:47.961299 #44592] FATAL -- : 
+ActiveRecord::StatementInvalid (Could not find table 'members'):
+  app/controllers/members_controller.rb:17:in `new'
+
+
+I, [2014-05-20T15:23:55.109118 #44592]  INFO -- : Started GET "/members/new" for 127.0.0.1 at 2014-05-20 15:23:55 +0200
+I, [2014-05-20T15:23:55.109944 #44592]  INFO -- : Processing by MembersController#new as HTML
+I, [2014-05-20T15:23:55.110763 #44592]  INFO -- : Completed 500 Internal Server Error in 1ms
+F, [2014-05-20T15:23:55.112093 #44592] FATAL -- : 
+ActiveRecord::StatementInvalid (Could not find table 'members'):
+  app/controllers/members_controller.rb:17:in `new'
+
+
+I, [2014-05-20T15:23:58.341151 #44592]  INFO -- : Started GET "/members/" for 127.0.0.1 at 2014-05-20 15:23:58 +0200
+I, [2014-05-20T15:23:58.341915 #44592]  INFO -- : Processing by MembersController#index as HTML
+E, [2014-05-20T15:23:58.343211 #44592] ERROR -- : SQLite3::SQLException: no such table: members: SELECT "members".* FROM "members"
+I, [2014-05-20T15:23:58.343834 #44592]  INFO -- :   Rendered members/index.html.erb within layouts/application (1.1ms)
+I, [2014-05-20T15:23:58.343973 #44592]  INFO -- : Completed 500 Internal Server Error in 2ms
+F, [2014-05-20T15:23:58.345935 #44592] FATAL -- : 
+ActionView::Template::Error (SQLite3::SQLException: no such table: members: SELECT "members".* FROM "members"):
+    11:   </thead>
+    12: 
+    13:   <tbody>
+    14:     <% @members.each do |member| %>
+    15:       <tr>
+    16:         <td><%= member.name %></td>
+    17:         <td><%= member.login %></td>
+  app/views/members/index.html.erb:14:in `_app_views_members_index_html_erb___4204572997792791787_70149974405740'
+
+
