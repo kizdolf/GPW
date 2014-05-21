@@ -26,6 +26,7 @@ class MembersController < ApplicationController
 		@member = Member.find_by_id( params[:id] )
 	end
 
+	# Return true if member is in 42 Ldap, false otherwise.
 	private
 	def from_42_Ldap(member)
 
