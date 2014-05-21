@@ -998,3 +998,505 @@ Processing by MembersController#index as HTML
   [1m[36mMember Load (0.1ms)[0m  [1mSELECT "members".* FROM "members"[0m
   Rendered members/index.html.erb within layouts/application (0.6ms)
 Completed 200 OK in 8ms (Views: 7.8ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-05-20 19:26:33 +0200
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 269ms (Views: 261.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2014-05-20 19:26:33 +0200
+
+
+Started GET "/assets/members.css?body=1" for 127.0.0.1 at 2014-05-20 19:26:33 +0200
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-05-20 19:26:33 +0200
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-05-20 19:26:33 +0200
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-05-20 19:26:33 +0200
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-05-20 19:26:33 +0200
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2014-05-20 19:26:33 +0200
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-05-20 19:26:33 +0200
+
+
+Started GET "/assets/members.js?body=1" for 127.0.0.1 at 2014-05-20 19:26:33 +0200
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-05-20 19:26:33 +0200
+
+
+Started GET "/members" for 127.0.0.1 at 2014-05-20 19:26:38 +0200
+Processing by MembersController#index as HTML
+  [1m[35mMember Load (0.2ms)[0m  SELECT "members".* FROM "members"
+  Rendered members/index.html.erb within layouts/application (3.9ms)
+Completed 200 OK in 11ms (Views: 9.3ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-05-20 19:26:40 +0200
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 6ms (Views: 5.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/members/new" for 127.0.0.1 at 2014-05-20 19:26:42 +0200
+Processing by MembersController#new as HTML
+  Rendered members/new.html.erb within layouts/application (12.3ms)
+Completed 200 OK in 18ms (Views: 17.7ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/members" for 127.0.0.1 at 2014-05-20 19:26:45 +0200
+Processing by MembersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"IsQJ/K7Bq+V1LZqBnCVksrzEvBoGSVoezSNKkQo3IZY=", "member"=>{"login"=>"Test", "password"=>"[FILTERED]"}, "commit"=>"Create Member"}
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.8ms)[0m  INSERT INTO "members" ("created_at", "login", "password", "updated_at") VALUES (?, ?, ?, ?)  [["created_at", "2014-05-20 17:26:45.960553"], ["login", "Test"], ["password", "weqwe"], ["updated_at", "2014-05-20 17:26:45.960553"]]
+  [1m[36m (1.5ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/
+Completed 302 Found in 7ms (ActiveRecord: 2.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-05-20 19:26:45 +0200
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 6ms (Views: 5.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/members" for 127.0.0.1 at 2014-05-20 19:26:48 +0200
+Processing by MembersController#index as HTML
+  [1m[35mMember Load (0.1ms)[0m  SELECT "members".* FROM "members"
+  Rendered members/index.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 24ms (Views: 23.9ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/members/2" for 127.0.0.1 at 2014-05-20 19:26:49 +0200
+Processing by MembersController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mMember Load (0.1ms)[0m  [1mSELECT  "members".* FROM "members"  WHERE "members"."id" = 2 LIMIT 1[0m
+  Rendered members/show.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 10ms (Views: 5.8ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-05-20 19:26:51 +0200
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 20ms (Views: 20.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-05-21 13:42:14 +0200
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (1.9ms)
+Completed 200 OK in 91ms (Views: 82.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2014-05-21 13:42:14 +0200
+
+
+Started GET "/assets/members.css?body=1" for 127.0.0.1 at 2014-05-21 13:42:14 +0200
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-05-21 13:42:14 +0200
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-05-21 13:42:14 +0200
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-05-21 13:42:14 +0200
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-05-21 13:42:14 +0200
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-05-21 13:42:14 +0200
+
+
+Started GET "/assets/members.js?body=1" for 127.0.0.1 at 2014-05-21 13:42:14 +0200
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2014-05-21 13:42:14 +0200
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-05-21 13:42:14 +0200
+
+
+Started GET "/members/new" for 127.0.0.1 at 2014-05-21 13:42:16 +0200
+Processing by MembersController#new as HTML
+  Rendered members/new.html.erb within layouts/application (39.1ms)
+Completed 200 OK in 48ms (Views: 45.0ms | ActiveRecord: 0.3ms)
+
+
+Started POST "/members" for 127.0.0.1 at 2014-05-21 13:42:23 +0200
+Processing by MembersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"IeIC7/ALh9SqaIwVO90h8XA/9Owjdar3llUQqfLSYSA=", "member"=>{"login"=>"jburet", "password"=>"[FILTERED]"}, "commit"=>"Create Member"}
+Completed 500 Internal Server Error in 2ms
+
+LoadError (cannot load such file -- net/ldap):
+  app/controllers/members_controller.rb:27:in `from_42_Ldap'
+  app/controllers/members_controller.rb:9:in `create'
+
+
+  Rendered /nfs/zfs-student-2/users/2013/jburet/.brew/Cellar/ruby/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.0/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.6ms)
+  Rendered /nfs/zfs-student-2/users/2013/jburet/.brew/Cellar/ruby/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (0.9ms)
+  Rendered /nfs/zfs-student-2/users/2013/jburet/.brew/Cellar/ruby/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.9ms)
+  Rendered /nfs/zfs-student-2/users/2013/jburet/.brew/Cellar/ruby/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (23.4ms)
+
+
+Started POST "/members" for 127.0.0.1 at 2014-05-21 13:43:29 +0200
+Processing by MembersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"IeIC7/ALh9SqaIwVO90h8XA/9Owjdar3llUQqfLSYSA=", "member"=>{"login"=>"jburet", "password"=>"[FILTERED]"}, "commit"=>"Create Member"}
+Completed 500 Internal Server Error in 2ms
+
+LoadError (cannot load such file -- net/ldap):
+  app/controllers/members_controller.rb:27:in `from_42_Ldap'
+  app/controllers/members_controller.rb:9:in `create'
+
+
+  Rendered /nfs/zfs-student-2/users/2013/jburet/.brew/Cellar/ruby/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.0/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.5ms)
+  Rendered /nfs/zfs-student-2/users/2013/jburet/.brew/Cellar/ruby/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (0.9ms)
+  Rendered /nfs/zfs-student-2/users/2013/jburet/.brew/Cellar/ruby/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.8ms)
+  Rendered /nfs/zfs-student-2/users/2013/jburet/.brew/Cellar/ruby/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (14.2ms)
+
+
+Started POST "/members" for 127.0.0.1 at 2014-05-21 13:43:35 +0200
+Processing by MembersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"IeIC7/ALh9SqaIwVO90h8XA/9Owjdar3llUQqfLSYSA=", "member"=>{"login"=>"jburet", "password"=>"[FILTERED]"}, "commit"=>"Create Member"}
+Completed 500 Internal Server Error in 2ms
+
+LoadError (cannot load such file -- net/ldap):
+  app/controllers/members_controller.rb:27:in `from_42_Ldap'
+  app/controllers/members_controller.rb:9:in `create'
+
+
+  Rendered /nfs/zfs-student-2/users/2013/jburet/.brew/Cellar/ruby/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.0/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.6ms)
+  Rendered /nfs/zfs-student-2/users/2013/jburet/.brew/Cellar/ruby/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.0ms)
+  Rendered /nfs/zfs-student-2/users/2013/jburet/.brew/Cellar/ruby/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.7ms)
+  Rendered /nfs/zfs-student-2/users/2013/jburet/.brew/Cellar/ruby/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (14.7ms)
+
+
+Started GET "/members" for 127.0.0.1 at 2014-05-21 13:44:03 +0200
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by MembersController#index as HTML
+  [1m[35mMember Load (0.1ms)[0m  SELECT "members".* FROM "members"
+  Rendered members/index.html.erb within layouts/application (4.3ms)
+Completed 200 OK in 62ms (Views: 53.0ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-05-21 13:44:08 +0200
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (0.2ms)
+Completed 200 OK in 5ms (Views: 5.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/members/new" for 127.0.0.1 at 2014-05-21 13:44:10 +0200
+Processing by MembersController#new as HTML
+  Rendered members/new.html.erb within layouts/application (13.5ms)
+Completed 200 OK in 30ms (Views: 29.7ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/members" for 127.0.0.1 at 2014-05-21 13:44:18 +0200
+Processing by MembersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"IeIC7/ALh9SqaIwVO90h8XA/9Owjdar3llUQqfLSYSA=", "member"=>{"login"=>"jburet", "password"=>"[FILTERED]"}, "commit"=>"Create Member"}
+Completed 500 Internal Server Error in 2ms
+
+LoadError (cannot load such file -- net/ldap):
+  app/controllers/members_controller.rb:27:in `from_42_Ldap'
+  app/controllers/members_controller.rb:9:in `create'
+
+
+  Rendered /nfs/zfs-student-2/users/2013/jburet/.brew/Cellar/ruby/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.0/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.6ms)
+  Rendered /nfs/zfs-student-2/users/2013/jburet/.brew/Cellar/ruby/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (0.9ms)
+  Rendered /nfs/zfs-student-2/users/2013/jburet/.brew/Cellar/ruby/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.8ms)
+  Rendered /nfs/zfs-student-2/users/2013/jburet/.brew/Cellar/ruby/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (14.6ms)
+
+
+Started POST "/members" for 127.0.0.1 at 2014-05-21 13:44:35 +0200
+
+LoadError (cannot load such file -- net/ldap):
+  app/controllers/members_controller.rb:3:in `<class:MembersController>'
+  app/controllers/members_controller.rb:1:in `<top (required)>'
+
+
+  Rendered /nfs/zfs-student-2/users/2013/jburet/.brew/Cellar/ruby/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.0/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.5ms)
+  Rendered /nfs/zfs-student-2/users/2013/jburet/.brew/Cellar/ruby/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.0ms)
+  Rendered /nfs/zfs-student-2/users/2013/jburet/.brew/Cellar/ruby/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.1ms)
+  Rendered /nfs/zfs-student-2/users/2013/jburet/.brew/Cellar/ruby/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (15.2ms)
+
+
+Started GET "/members" for 127.0.0.1 at 2014-05-21 13:46:25 +0200
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by MembersController#index as HTML
+  [1m[35mMember Load (0.1ms)[0m  SELECT "members".* FROM "members"
+  Rendered members/index.html.erb within layouts/application (4.2ms)
+Completed 200 OK in 47ms (Views: 37.4ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-05-21 13:46:27 +0200
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 19ms (Views: 18.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/members/new" for 127.0.0.1 at 2014-05-21 13:46:28 +0200
+Processing by MembersController#new as HTML
+  Rendered members/new.html.erb within layouts/application (12.4ms)
+Completed 200 OK in 32ms (Views: 28.9ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/members" for 127.0.0.1 at 2014-05-21 13:46:33 +0200
+Processing by MembersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"IeIC7/ALh9SqaIwVO90h8XA/9Owjdar3llUQqfLSYSA=", "member"=>{"login"=>"jburet", "password"=>"[FILTERED]"}, "commit"=>"Create Member"}
+Completed 500 Internal Server Error in 1ms
+
+NameError (uninitialized constant MembersController::NET):
+  app/controllers/members_controller.rb:30:in `from_42_Ldap'
+  app/controllers/members_controller.rb:12:in `create'
+
+
+  Rendered /nfs/zfs-student-2/users/2013/jburet/.brew/Cellar/ruby/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.0/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.6ms)
+  Rendered /nfs/zfs-student-2/users/2013/jburet/.brew/Cellar/ruby/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (0.9ms)
+  Rendered /nfs/zfs-student-2/users/2013/jburet/.brew/Cellar/ruby/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.8ms)
+  Rendered /nfs/zfs-student-2/users/2013/jburet/.brew/Cellar/ruby/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (14.7ms)
+
+
+Started POST "/members" for 127.0.0.1 at 2014-05-21 13:46:56 +0200
+Processing by MembersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"IeIC7/ALh9SqaIwVO90h8XA/9Owjdar3llUQqfLSYSA=", "member"=>{"login"=>"jburet", "password"=>"[FILTERED]"}, "commit"=>"Create Member"}
+Completed 500 Internal Server Error in 5ms
+
+Net::LDAP::LdapError (unsupported encryption method ):
+  app/controllers/members_controller.rb:37:in `from_42_Ldap'
+  app/controllers/members_controller.rb:12:in `create'
+
+
+  Rendered /nfs/zfs-student-2/users/2013/jburet/.brew/Cellar/ruby/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.0/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.9ms)
+  Rendered /nfs/zfs-student-2/users/2013/jburet/.brew/Cellar/ruby/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (0.9ms)
+  Rendered /nfs/zfs-student-2/users/2013/jburet/.brew/Cellar/ruby/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.7ms)
+  Rendered /nfs/zfs-student-2/users/2013/jburet/.brew/Cellar/ruby/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (15.0ms)
+
+
+Started POST "/members" for 127.0.0.1 at 2014-05-21 13:47:38 +0200
+Processing by MembersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"IeIC7/ALh9SqaIwVO90h8XA/9Owjdar3llUQqfLSYSA=", "member"=>{"login"=>"jburet", "password"=>"[FILTERED]"}, "commit"=>"Create Member"}
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "members" ("created_at", "login", "password", "updated_at") VALUES (?, ?, ?, ?)  [["created_at", "2014-05-21 11:47:38.186453"], ["login", "jburet"], ["password", "public6542ENEMY"], ["updated_at", "2014-05-21 11:47:38.186453"]]
+  [1m[36m (1.5ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/
+Completed 302 Found in 68ms (ActiveRecord: 2.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-05-21 13:47:38 +0200
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 6ms (Views: 5.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2014-05-21 13:47:38 +0200
+
+
+Started GET "/assets/members.css?body=1" for 127.0.0.1 at 2014-05-21 13:47:38 +0200
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-05-21 13:47:38 +0200
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-05-21 13:47:38 +0200
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-05-21 13:47:38 +0200
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-05-21 13:47:38 +0200
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-05-21 13:47:38 +0200
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2014-05-21 13:47:38 +0200
+
+
+Started GET "/assets/members.js?body=1" for 127.0.0.1 at 2014-05-21 13:47:38 +0200
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-05-21 13:47:38 +0200
+
+
+Started GET "/members/new" for 127.0.0.1 at 2014-05-21 13:47:47 +0200
+Processing by MembersController#new as HTML
+  Rendered members/new.html.erb within layouts/application (1.9ms)
+Completed 200 OK in 24ms (Views: 23.8ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/members" for 127.0.0.1 at 2014-05-21 13:47:49 +0200
+Processing by MembersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"IeIC7/ALh9SqaIwVO90h8XA/9Owjdar3llUQqfLSYSA=", "member"=>{"login"=>"jburet", "password"=>"[FILTERED]"}, "commit"=>"Create Member"}
+Redirected to http://localhost:3000/
+Completed 302 Found in 1446ms (ActiveRecord: 0.0ms)
+
+
+Started POST "/members" for 127.0.0.1 at 2014-05-21 13:47:51 +0200
+Processing by MembersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"IeIC7/ALh9SqaIwVO90h8XA/9Owjdar3llUQqfLSYSA=", "member"=>{"login"=>"jburet", "password"=>"[FILTERED]"}, "commit"=>"Create Member"}
+Redirected to http://localhost:3000/
+Completed 302 Found in 1125ms (ActiveRecord: 0.0ms)
+
+
+Started POST "/members" for 127.0.0.1 at 2014-05-21 13:47:52 +0200
+Processing by MembersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"IeIC7/ALh9SqaIwVO90h8XA/9Owjdar3llUQqfLSYSA=", "member"=>{"login"=>"jburet", "password"=>"[FILTERED]"}, "commit"=>"Create Member"}
+Redirected to http://localhost:3000/
+Completed 302 Found in 939ms (ActiveRecord: 0.0ms)
+
+
+Started POST "/members" for 127.0.0.1 at 2014-05-21 13:47:53 +0200
+Processing by MembersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"IeIC7/ALh9SqaIwVO90h8XA/9Owjdar3llUQqfLSYSA=", "member"=>{"login"=>"jburet", "password"=>"[FILTERED]"}, "commit"=>"Create Member"}
+Redirected to http://localhost:3000/
+Completed 302 Found in 968ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-05-21 13:47:54 +0200
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 5ms (Views: 4.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-05-21 13:47:54 +0200
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-05-21 13:47:54 +0200
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2014-05-21 13:47:54 +0200
+
+
+Started GET "/assets/members.css?body=1" for 127.0.0.1 at 2014-05-21 13:47:54 +0200
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-05-21 13:47:54 +0200
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-05-21 13:47:54 +0200
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-05-21 13:47:54 +0200
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2014-05-21 13:47:54 +0200
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-05-21 13:47:54 +0200
+
+
+Started GET "/assets/members.js?body=1" for 127.0.0.1 at 2014-05-21 13:47:54 +0200
+
+
+Started GET "/members/new" for 127.0.0.1 at 2014-05-21 13:48:27 +0200
+Processing by MembersController#new as HTML
+  Rendered members/new.html.erb within layouts/application (3.6ms)
+Completed 200 OK in 11ms (Views: 8.8ms | ActiveRecord: 0.3ms)
+
+
+Started POST "/members" for 127.0.0.1 at 2014-05-21 13:48:33 +0200
+Processing by MembersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"IeIC7/ALh9SqaIwVO90h8XA/9Owjdar3llUQqfLSYSA=", "member"=>{"login"=>"jburet", "password"=>"[FILTERED]"}, "commit"=>"Create Member"}
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "members" ("created_at", "login", "password", "updated_at") VALUES (?, ?, ?, ?)[0m  [["created_at", "2014-05-21 11:48:33.578805"], ["login", "jburet"], ["password", "public6542ENEMY"], ["updated_at", "2014-05-21 11:48:33.578805"]]
+  [1m[35m (1.9ms)[0m  commit transaction
+Redirected to http://localhost:3000/
+Completed 302 Found in 51ms (ActiveRecord: 2.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-05-21 13:48:33 +0200
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 6ms (Views: 5.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2014-05-21 13:48:33 +0200
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-05-21 13:48:33 +0200
+
+
+Started GET "/assets/members.css?body=1" for 127.0.0.1 at 2014-05-21 13:48:33 +0200
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-05-21 13:48:33 +0200
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-05-21 13:48:33 +0200
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-05-21 13:48:33 +0200
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2014-05-21 13:48:33 +0200
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-05-21 13:48:33 +0200
+
+
+Started GET "/assets/members.js?body=1" for 127.0.0.1 at 2014-05-21 13:48:33 +0200
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-05-21 13:48:33 +0200
+
+
+Started GET "/members/new" for 127.0.0.1 at 2014-05-21 13:48:35 +0200
+Processing by MembersController#new as HTML
+  Rendered members/new.html.erb within layouts/application (15.0ms)
+Completed 200 OK in 22ms (Views: 21.9ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/members" for 127.0.0.1 at 2014-05-21 13:48:37 +0200
+Processing by MembersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"IeIC7/ALh9SqaIwVO90h8XA/9Owjdar3llUQqfLSYSA=", "member"=>{"login"=>"qwe", "password"=>"[FILTERED]"}, "commit"=>"Create Member"}
+Redirected to http://localhost:3000/
+Completed 302 Found in 46ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-05-21 13:48:37 +0200
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 6ms (Views: 5.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-05-21 13:48:37 +0200
+
+
+Started GET "/assets/members.css?body=1" for 127.0.0.1 at 2014-05-21 13:48:37 +0200
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2014-05-21 13:48:37 +0200
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-05-21 13:48:37 +0200
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-05-21 13:48:37 +0200
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-05-21 13:48:37 +0200
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-05-21 13:48:37 +0200
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2014-05-21 13:48:37 +0200
+
+
+Started GET "/assets/members.js?body=1" for 127.0.0.1 at 2014-05-21 13:48:37 +0200
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-05-21 13:48:37 +0200
