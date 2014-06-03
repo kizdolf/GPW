@@ -1,5 +1,25 @@
 <h1> Member's list</h1>
-<% @members.each do |m| %>
-<a href="/members/<%= m.id %>"><%= m.login %></a><br />
+
+<button id="sort" class="one">Z -> A</button>
+<div id="list">
+<% @members.sort{|a, b| a.login <=> b.login }.each do |m| %>
+	<a href="/members/<%= m.id %>"><%= m.login %></a><br />
 <% end %>
+</div>
+
 <br /><a href="/">Home</a>
+<script type="text/javascript">
+
+	$("#sort").click(function() {
+		if ($(this).hasClass("one")) {
+			$("#list").html("<% @members.sort{|b, a| a.login <=> b.login }.each do |m| %><a href='/members/<%= m.id %>'><%= m.login %></a><br /><% end %>");
+			$(this).html('A -> Z');
+			$(this).attr('class', 'two');
+		}
+		else {
+			$(this).html('Z -> A');
+			$("#list").html("<% @members.sort{|a, b| a.login <=> b.login }.each do |m| %><a href='/members/<%= m.id %>'><%= m.login %></a><br /><% end %>");
+			$(this).attr('class', 'one');
+		}
+	});
+</script>
