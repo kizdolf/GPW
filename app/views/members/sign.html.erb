@@ -1,0 +1,6 @@
+<h1>SignIN</h1>
+<%= form_tag(:controller => "members", :action => "signin") do %>
+login :<%= text_field_tag(:login) %>
+password : <%= password_field_tag(:password) %>
+<%= submit_tag("Log in") %> 
+<% end %>

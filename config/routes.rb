@@ -1,8 +1,12 @@
 Rails.application.routes.draw do
 
-  resources :members
 
   root to: "home#index"
+  get 'members/sign'
+  post 'members/signin'
+  get  'members/logout'
+
+  resources :members 
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
